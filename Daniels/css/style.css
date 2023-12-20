@@ -1,0 +1,405 @@
+/* GLOBAL */
+
+:root {
+  --mainColor: #343434;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/************************************************/
+/* START NAVBAR*/
+.navbar-nav .nav-link.active:after {
+  content: "";
+  height: 2px;
+  width: 45px;
+  background: #fff;
+  position: absolute;
+  bottom: 27px;
+  left: 830px;
+  transition: all 0.5s;
+}
+/* END NAVBAR */
+
+/* START HOME */
+.home {
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home-caption h5 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.home-caption h1 {
+  font-weight: 200;
+  color: #fff;
+}
+
+.about .btn:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social-icons a {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 3px;
+}
+
+.home-caption span::after {
+  content: " |";
+  animation: typing 3s infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+  5% {
+    content: " De|";
+  }
+  10% {
+    content: " Dev|";
+  }
+  15% {
+    content: " Deve|";
+  }
+  20% {
+    content: " Devel|";
+  }
+  25% {
+    content: " Develo|";
+  }
+  30% {
+    content: " Develop|";
+  }
+  35% {
+    content: " Develope|";
+  }
+  40% {
+    content: " Developer|";
+  }
+  45% {
+    content: " Develope|";
+  }
+  50% {
+    content: " Develop|";
+  }
+  55% {
+    content: " Develo|";
+  }
+  60% {
+    content: " Devel|";
+  }
+  65% {
+    content: " Deve|";
+  }
+  70% {
+    content: " Dev|";
+  }
+  75% {
+    content: " De|";
+  }
+  80% {
+    content: " D|";
+  }
+}
+
+/* END HOME */
+
+/* START ABOUT */
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.about .hero-img {
+  padding: 0 0 0 30px;
+  position: relative;
+}
+
+.about-content h3 {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.about .about-content .sub-title {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background-color: #1c1c1c;
+}
+
+.about .skills h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  bottom: -5px;
+}
+
+.mw-700 {
+  max-width: 700px;
+}
+
+/* END ABOUT */
+
+/* START SERVICES */
+.bg-gray {
+  background-color: #f7f7f7;
+}
+.section-padding {
+  padding: 100px 0;
+}
+.pb-70 {
+  padding-bottom: 70px !important;
+}
+
+h3 {
+  font-weight: 900 !important;
+  font-size: 40px;
+}
+
+.services .item {
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.services .item .icon {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+  padding: 18px;
+}
+.services .item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.services .item p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+
+.services .item:hover .icon {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+/* END SERVICES */
+
+/*START PORTFOLIO */
+li {
+  list-style-type: none;
+}
+
+.portfolio .items {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.portfolio .item-img {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  border: 0;
+}
+
+.portfolio .item-img-overlay {
+  position: absolute;
+  top: 5px;
+  background-color: white;
+  z-index: 2;
+  opacity: 0;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  transition: all 0.5s;
+}
+
+.portfolio .item-img:hover .item-img-overlay {
+  opacity: 1;
+}
+
+.portfolio .overlay h6 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.overlay .icons .fa-link-slash:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.overlay .icons .fa-magnifying-glass-plus:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.fa-link-slash {
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  color: #fff;
+  border: 1px solid #111;
+  transition: all 0.5s;
+}
+
+.fa-magnifying-glass-plus {
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  border: 1px solid #111;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/* END PORTFOLIO */
+
+/* START CLIENTS */
+.clients-head {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #869791;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.content span {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* END CLIENTS */
+
+/* START NUMBERS */
+.numbers .icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.numbers h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.numbers p {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+/* END NUMBERS */
+
+/* START BLOG */
+.card:hover img {
+  transform: scale(1.2);
+}
+img {
+  transition: transform 0.7s;
+}
+
+.card-img {
+  overflow: hidden;
+}
+
+.line10 {
+  height: 1px;
+  width: 90px;
+  background-color: #111;
+}
+
+.blog .blog-head h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* END BLOG */
+
+/* START CONTACT */
+
+.contact-head h3 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.contact .item h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fa-phone {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.fa-envelope {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.fa-location-arrow {
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.contact .item:hover .fa-location-arrow {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.contact .item:hover .fa-envelope {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.contact .item:hover .fa-phone {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.contact .row .mb-3 .btn:hover {
+  background-color: #fff !important;
+  color: #869791 !important;
+  border: 1px solid #343434;
+}
+/* END CONTACT */
